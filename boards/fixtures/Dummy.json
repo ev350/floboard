@@ -1,0 +1,861 @@
+[
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "boards",
+      "model": "board"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "boards",
+      "model": "card"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "boards",
+      "model": "column"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "boards",
+      "model": "comment"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "boards",
+      "model": "label"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "teams",
+      "model": "membership"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "teams",
+      "model": "project"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "teams",
+      "model": "role"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+      "app_label": "teams",
+      "model": "team"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "u2nzwpd6d69whrp00wn0gn0z7ed88jsm",
+    "fields": {
+      "session_data": "NjE1ODI4MzRjZWFhMGMwYWNjOTc0ZTllNTQ5NjIyNGYzMjZhYTFkNDp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJjZWQ2MzRhMTY0NzM2ODFjZWQ2YTFlMTY4YmZiMDdkYzhlZjM0YTQ4In0=",
+      "expire_date": "2018-06-29T18:38:02.969Z"
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 1,
+    "fields": {
+      "board": 1,
+      "title": "Backlog",
+      "position": 1
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 2,
+    "fields": {
+      "board": 1,
+      "title": "In Progress",
+      "position": 2
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 3,
+    "fields": {
+      "board": 1,
+      "title": "QA",
+      "position": 3
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 4,
+    "fields": {
+      "board": 1,
+      "title": "Done",
+      "position": 4
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 5,
+    "fields": {
+      "board": 2,
+      "title": "Backlog",
+      "position": 1
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 6,
+    "fields": {
+      "board": 2,
+      "title": "Selected",
+      "position": 2
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 7,
+    "fields": {
+      "board": 2,
+      "title": "In Progress",
+      "position": 3
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 8,
+    "fields": {
+      "board": 2,
+      "title": "QA",
+      "position": 4
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 9,
+    "fields": {
+      "board": 2,
+      "title": "Done",
+      "position": 5
+    }
+  },
+  {
+    "model": "boards.label",
+    "pk": 2,
+    "fields": {
+      "board": 1,
+      "title": "Tidiness",
+      "color": "#94fbff"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can add board",
+      "content_type": 7,
+      "codename": "add_board"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can change board",
+      "content_type": 7,
+      "codename": "change_board"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can delete board",
+      "content_type": 7,
+      "codename": "delete_board"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can add card",
+      "content_type": 8,
+      "codename": "add_card"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can change card",
+      "content_type": 8,
+      "codename": "change_card"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can delete card",
+      "content_type": 8,
+      "codename": "delete_card"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add column",
+      "content_type": 9,
+      "codename": "add_column"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change column",
+      "content_type": 9,
+      "codename": "change_column"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete column",
+      "content_type": 9,
+      "codename": "delete_column"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can add comment",
+      "content_type": 10,
+      "codename": "add_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can change comment",
+      "content_type": 10,
+      "codename": "change_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can delete comment",
+      "content_type": 10,
+      "codename": "delete_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can add label",
+      "content_type": 11,
+      "codename": "add_label"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can change label",
+      "content_type": 11,
+      "codename": "change_label"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can delete label",
+      "content_type": 11,
+      "codename": "delete_label"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can add membership",
+      "content_type": 12,
+      "codename": "add_membership"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can change membership",
+      "content_type": 12,
+      "codename": "change_membership"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can delete membership",
+      "content_type": 12,
+      "codename": "delete_membership"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add project",
+      "content_type": 13,
+      "codename": "add_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change project",
+      "content_type": 13,
+      "codename": "change_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete project",
+      "content_type": 13,
+      "codename": "delete_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can add role",
+      "content_type": 14,
+      "codename": "add_role"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can change role",
+      "content_type": 14,
+      "codename": "change_role"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can delete role",
+      "content_type": 14,
+      "codename": "delete_role"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can add team",
+      "content_type": 15,
+      "codename": "add_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can change team",
+      "content_type": 15,
+      "codename": "change_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can delete team",
+      "content_type": 15,
+      "codename": "delete_team"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$9CMpOY0FcfOS$fj0mBcR2ICIt99tPtXqejeW4VscvU1wQqXsetMEVnzo=",
+      "last_login": "2018-06-15T18:38:02.967Z",
+      "is_superuser": true,
+      "username": "ev350",
+      "first_name": "",
+      "last_name": "",
+      "email": "euan-cowie@hotmail.co.uk",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2018-06-15T18:34:38.978Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "boards.board",
+    "pk": 1,
+    "fields": {
+      "title": "Demo Board",
+      "created_by": 1
+    }
+  },
+  {
+    "model": "boards.board",
+    "pk": 2,
+    "fields": {
+      "title": "World Cup Sweepstakes",
+      "created_by": 1
+    }
+  },
+  {
+    "model": "boards.card",
+    "pk": 1,
+    "fields": {
+      "column": 1,
+      "title": "Go to IKEA",
+      "description": "I need to get some more storage space to tidy up my room!",
+      "created_at": "2018-06-15T18:49:48.811Z",
+      "updated_at": null,
+      "created_by": 1,
+      "assignees": [
+        1
+      ],
+      "labels": [
+        2
+      ]
+    }
+  },
+  {
+    "model": "boards.card",
+    "pk": 2,
+    "fields": {
+      "column": 6,
+      "title": "Daily Caching of Countries/Players",
+      "description": "The data that is not pertinent to live streaming can be retrieved from football-data.org daily to reduce the number of calls that need to be made to said external API. It makes more sense to store locally and then an internal API can be made and called to my heart's desire.",
+      "created_at": "2018-06-15T21:42:13.277Z",
+      "updated_at": null,
+      "created_by": 1,
+      "assignees": [
+        1
+      ],
+      "labels": []
+    }
+  },
+  {
+    "model": "boards.comment",
+    "pk": 1,
+    "fields": {
+      "card": 1,
+      "message": "Lucy said maybe this week!",
+      "created_at": "2018-06-15T18:57:44.703Z",
+      "updated_at": null,
+      "created_by": 1,
+      "updated_by": null
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2018-06-15T18:38:35.910Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Board: Demo Board",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2018-06-15T18:39:30.949Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": "Board Board: Demo Board: Backlog",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2018-06-15T18:41:08.687Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": "Demo Board: In Progress",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2018-06-15T18:41:22.053Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "Demo Board: QA",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2018-06-15T18:41:29.524Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "4",
+      "object_repr": "Demo Board: Done",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2018-06-15T18:49:48.843Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Demo Board: Backlog: Go to IKEA",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2018-06-15T18:57:44.705Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Lucy said maybe this week!",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2018-06-15T21:32:05.542Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "World Cup Sweepstakes",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2018-06-15T21:36:47.862Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "World Cup Sweepstakes",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"column\", \"object\": \"World Cup Sweepstakes: Backlog\"}}, {\"added\": {\"name\": \"column\", \"object\": \"World Cup Sweepstakes: Selected\"}}, {\"added\": {\"name\": \"column\", \"object\": \"World Cup Sweepstakes: In Progress\"}}, {\"added\": {\"name\": \"column\", \"object\": \"World Cup Sweepstakes: QA\"}}, {\"added\": {\"name\": \"column\", \"object\": \"World Cup Sweepstakes: Done\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2018-06-15T21:42:13.285Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "World Cup Sweepstakes: Selected",
+      "action_flag": 2,
+      "change_message": "[{\"added\": {\"name\": \"card\", \"object\": \"World Cup Sweepstakes: Selected: Daily Caching of Countries/Players\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2018-06-16T13:56:08.926Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "2",
+      "object_repr": "Demo Board: Tidiness",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2018-06-16T13:57:02.782Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "Demo Board: Backlog: Go to IKEA",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"labels\"]}}]"
+    }
+  }
+]
