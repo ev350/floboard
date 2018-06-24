@@ -1,0 +1,1288 @@
+[
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "boards",
+      "model": "board"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "boards",
+      "model": "card"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "boards",
+      "model": "column"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 10,
+    "fields": {
+      "app_label": "boards",
+      "model": "comment"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 11,
+    "fields": {
+      "app_label": "boards",
+      "model": "label"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 12,
+    "fields": {
+      "app_label": "teams",
+      "model": "membership"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 13,
+    "fields": {
+      "app_label": "teams",
+      "model": "project"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 14,
+    "fields": {
+      "app_label": "teams",
+      "model": "role"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 15,
+    "fields": {
+      "app_label": "teams",
+      "model": "team"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 16,
+    "fields": {
+      "app_label": "authtoken",
+      "model": "token"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 17,
+    "fields": {
+      "app_label": "projects",
+      "model": "membership"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 18,
+    "fields": {
+      "app_label": "projects",
+      "model": "project"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 19,
+    "fields": {
+      "app_label": "projects",
+      "model": "role"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 20,
+    "fields": {
+      "app_label": "projects",
+      "model": "team"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "tqphsg2gwk96j08uz5fk3iim1gyxnobe",
+    "fields": {
+      "session_data": "Y2E3N2IzZDI0Yzg3MzJhZjA4MWExNjU5YTRjMjBlN2FjYzNiZjIxYTp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiJlNDk3MTdlNDQ4MmZiYmVkMzQyMTdmNWFiZjgxZDQzYTU5MzdhNGE5In0=",
+      "expire_date": "2018-07-05T19:36:14.088Z"
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 6,
+    "fields": {
+      "board": 9,
+      "title": "Backlog",
+      "position": 1,
+      "header_color": "#b5cfff"
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 7,
+    "fields": {
+      "board": 9,
+      "title": "In Progress",
+      "position": 2,
+      "header_color": "#aeff98"
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 8,
+    "fields": {
+      "board": 9,
+      "title": "In QA",
+      "position": 4,
+      "header_color": "#ffc7c9"
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 9,
+    "fields": {
+      "board": 9,
+      "title": "Done",
+      "position": 5,
+      "header_color": "#fff299"
+    }
+  },
+  {
+    "model": "boards.column",
+    "pk": 10,
+    "fields": {
+      "board": 9,
+      "title": "Ready for QA",
+      "position": 3,
+      "header_color": "#d3fff7"
+    }
+  },
+  {
+    "model": "boards.label",
+    "pk": 3,
+    "fields": {
+      "board": 9,
+      "title": "Feature",
+      "color": "#86ff5a"
+    }
+  },
+  {
+    "model": "boards.label",
+    "pk": 4,
+    "fields": {
+      "board": 9,
+      "title": "Bug",
+      "color": "#ff0000"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can add board",
+      "content_type": 7,
+      "codename": "add_board"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can change board",
+      "content_type": 7,
+      "codename": "change_board"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can delete board",
+      "content_type": 7,
+      "codename": "delete_board"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can add card",
+      "content_type": 8,
+      "codename": "add_card"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can change card",
+      "content_type": 8,
+      "codename": "change_card"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can delete card",
+      "content_type": 8,
+      "codename": "delete_card"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add column",
+      "content_type": 9,
+      "codename": "add_column"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change column",
+      "content_type": 9,
+      "codename": "change_column"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete column",
+      "content_type": 9,
+      "codename": "delete_column"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can add comment",
+      "content_type": 10,
+      "codename": "add_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can change comment",
+      "content_type": 10,
+      "codename": "change_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can delete comment",
+      "content_type": 10,
+      "codename": "delete_comment"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can add label",
+      "content_type": 11,
+      "codename": "add_label"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can change label",
+      "content_type": 11,
+      "codename": "change_label"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can delete label",
+      "content_type": 11,
+      "codename": "delete_label"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can add membership",
+      "content_type": 12,
+      "codename": "add_membership"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can change membership",
+      "content_type": 12,
+      "codename": "change_membership"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can delete membership",
+      "content_type": 12,
+      "codename": "delete_membership"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 37,
+    "fields": {
+      "name": "Can add project",
+      "content_type": 13,
+      "codename": "add_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 38,
+    "fields": {
+      "name": "Can change project",
+      "content_type": 13,
+      "codename": "change_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 39,
+    "fields": {
+      "name": "Can delete project",
+      "content_type": 13,
+      "codename": "delete_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 40,
+    "fields": {
+      "name": "Can add role",
+      "content_type": 14,
+      "codename": "add_role"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 41,
+    "fields": {
+      "name": "Can change role",
+      "content_type": 14,
+      "codename": "change_role"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 42,
+    "fields": {
+      "name": "Can delete role",
+      "content_type": 14,
+      "codename": "delete_role"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 43,
+    "fields": {
+      "name": "Can add team",
+      "content_type": 15,
+      "codename": "add_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 44,
+    "fields": {
+      "name": "Can change team",
+      "content_type": 15,
+      "codename": "change_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 45,
+    "fields": {
+      "name": "Can delete team",
+      "content_type": 15,
+      "codename": "delete_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 46,
+    "fields": {
+      "name": "Can add Token",
+      "content_type": 16,
+      "codename": "add_token"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 47,
+    "fields": {
+      "name": "Can change Token",
+      "content_type": 16,
+      "codename": "change_token"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 48,
+    "fields": {
+      "name": "Can delete Token",
+      "content_type": 16,
+      "codename": "delete_token"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 49,
+    "fields": {
+      "name": "Can add membership",
+      "content_type": 17,
+      "codename": "add_membership"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 50,
+    "fields": {
+      "name": "Can change membership",
+      "content_type": 17,
+      "codename": "change_membership"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 51,
+    "fields": {
+      "name": "Can delete membership",
+      "content_type": 17,
+      "codename": "delete_membership"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 52,
+    "fields": {
+      "name": "Can add project",
+      "content_type": 18,
+      "codename": "add_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 53,
+    "fields": {
+      "name": "Can change project",
+      "content_type": 18,
+      "codename": "change_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 54,
+    "fields": {
+      "name": "Can delete project",
+      "content_type": 18,
+      "codename": "delete_project"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 55,
+    "fields": {
+      "name": "Can add role",
+      "content_type": 19,
+      "codename": "add_role"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 56,
+    "fields": {
+      "name": "Can change role",
+      "content_type": 19,
+      "codename": "change_role"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 57,
+    "fields": {
+      "name": "Can delete role",
+      "content_type": 19,
+      "codename": "delete_role"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 58,
+    "fields": {
+      "name": "Can add team",
+      "content_type": 20,
+      "codename": "add_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 59,
+    "fields": {
+      "name": "Can change team",
+      "content_type": 20,
+      "codename": "change_team"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 60,
+    "fields": {
+      "name": "Can delete team",
+      "content_type": 20,
+      "codename": "delete_team"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$EwZO8RtjP9iG$7nza1YhHqan6OlyQ8VeVGgyExmCDR1JZzc//coBXpH8=",
+      "last_login": "2018-06-21T19:36:14.086Z",
+      "is_superuser": true,
+      "username": "ev350",
+      "first_name": "",
+      "last_name": "",
+      "email": "euan-cowie@hotmail.co.uk",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2018-06-17T18:38:59.252Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$100000$uMPiCrH724sr$IZCmVjex8//9AZ4EIAq09DwUtm3MVH8nILk3QPIVNPU=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "test1",
+      "first_name": "",
+      "last_name": "",
+      "email": "test1@hotmail.co.uk",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-06-17T19:13:20.336Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "authtoken.token",
+    "pk": "9fbcb050b082a050312ffa294754a8bc7b961a83",
+    "fields": {
+      "user": 3,
+      "created": "2018-06-21T18:08:56.052Z"
+    }
+  },
+  {
+    "model": "authtoken.token",
+    "pk": "d0523fb99ae10e37b9a243bc68672c561755eb46",
+    "fields": {
+      "user": 1,
+      "created": "2018-06-21T18:08:56.049Z"
+    }
+  },
+  {
+    "model": "boards.board",
+    "pk": 9,
+    "fields": {
+      "title": "Project Board Prototype",
+      "created_by": 1
+    }
+  },
+  {
+    "model": "boards.card",
+    "pk": 2,
+    "fields": {
+      "board": 9,
+      "column": 6,
+      "title": "Learn ReactJS",
+      "description": "I need to continue to learn how to work with ReactJS. I also need to write tests as I code to ensure quality.",
+      "created_at": "2018-06-18T18:36:59.352Z",
+      "updated_at": null,
+      "created_by": 1,
+      "assignees": [
+        1,
+        3
+      ],
+      "labels": [
+        3,
+        4
+      ]
+    }
+  },
+  {
+    "model": "boards.card",
+    "pk": 3,
+    "fields": {
+      "board": 9,
+      "column": 6,
+      "title": "Learn CSS",
+      "description": "Learn CSS and ask Gaston for some design help.",
+      "created_at": "2018-06-22T23:26:00.207Z",
+      "updated_at": null,
+      "created_by": 1,
+      "assignees": [
+        1
+      ],
+      "labels": []
+    }
+  },
+  {
+    "model": "boards.card",
+    "pk": 4,
+    "fields": {
+      "board": 9,
+      "column": 7,
+      "title": "Prototyping Single Board in ReactJS",
+      "description": "Keep working on the single board display of columns and cards to ensure that it displays the information in an appealing and functional way.",
+      "created_at": "2018-06-22T23:28:32.674Z",
+      "updated_at": null,
+      "created_by": 1,
+      "assignees": [
+        1
+      ],
+      "labels": []
+    }
+  },
+  {
+    "model": "boards.card",
+    "pk": 5,
+    "fields": {
+      "board": 9,
+      "column": 9,
+      "title": "Rudimentary API Testing",
+      "description": "Perform rudimentary testing of the DRF REST API: GET, POST, PUT and DELETE. Make sure that each of these works for lists (GET and POST) and single detail items (PUT and DELETE).",
+      "created_at": "2018-06-22T23:30:03.789Z",
+      "updated_at": null,
+      "created_by": 1,
+      "assignees": [
+        1
+      ],
+      "labels": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "boards.comment",
+    "pk": 3,
+    "fields": {
+      "card": 2,
+      "message": "sdgsadgasdgasdgasdg",
+      "created_at": "2018-06-18T18:36:59.360Z",
+      "updated_at": null,
+      "created_by": 1,
+      "updated_by": null
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2018-06-17T18:42:52.524Z",
+      "user": 1,
+      "content_type": 10,
+      "object_id": "1",
+      "object_repr": "Dummy Message",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2018-06-18T18:35:40.733Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "9",
+      "object_repr": "Demo Board",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"column\", \"object\": \"Demo Board: Backlog\"}}, {\"added\": {\"name\": \"column\", \"object\": \"Demo Board: In Progress\"}}, {\"added\": {\"name\": \"column\", \"object\": \"Demo Board: In QA\"}}, {\"added\": {\"name\": \"column\", \"object\": \"Demo Board: Done\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2018-06-18T18:36:12.602Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "3",
+      "object_repr": "Demo Board: Feature",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2018-06-18T18:36:19.665Z",
+      "user": 1,
+      "content_type": 11,
+      "object_id": "4",
+      "object_repr": "Demo Board: Bug",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2018-06-18T18:36:59.361Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Demo Board: Backlog: Do some stuff",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}, {\"added\": {\"name\": \"comment\", \"object\": \"sdgsadgasdgasdgasdg\"}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2018-06-21T20:24:03.112Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "World Cup Sweepstakes",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2018-06-22T23:11:12.787Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "6",
+      "object_repr": "Demo Board: Backlog",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"header_color\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2018-06-22T23:11:48.750Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "7",
+      "object_repr": "Demo Board: In Progress",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"header_color\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2018-06-22T23:11:55.454Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "8",
+      "object_repr": "Demo Board: In QA",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"header_color\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2018-06-22T23:12:05.111Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "9",
+      "object_repr": "Demo Board: Done",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"header_color\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2018-06-22T23:21:35.696Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "9",
+      "object_repr": "Project Board Prototype",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2018-06-22T23:24:17.905Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Project Board Prototype: Backlog: Learn ReactJS",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"title\", \"description\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2018-06-22T23:26:00.213Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "Project Board Prototype: Backlog: Learn CSS",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2018-06-22T23:28:32.680Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "Project Board Prototype: In Progress: Prototyping Single Board in ReactJS",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2018-06-22T23:30:03.795Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Project Board Prototype: Done: Rudimentary API Testing",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2018-06-23T13:13:59.100Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "9",
+      "object_repr": "Project Board Prototype: Done",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"position\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2018-06-23T13:15:16.767Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "10",
+      "object_repr": "Project Board Prototype: Ready for QA",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2018-06-23T18:59:27.069Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "World Cup Sweepstakes",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2018-06-23T18:59:27.073Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2018-06-23T18:59:27.074Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2018-06-23T18:59:27.075Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2018-06-23T18:59:27.076Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2018-06-23T18:59:27.077Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2018-06-23T18:59:27.078Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2018-06-23T22:13:41.130Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "Project Board Prototype: Backlog: Learn ReactJS",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"labels\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2018-06-23T22:13:47.672Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "Project Board Prototype: Done: Rudimentary API Testing",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"labels\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2018-06-24T10:42:52.700Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "8",
+      "object_repr": "Project Board Prototype: In QA",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"position\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2018-06-24T10:43:02.697Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "10",
+      "object_repr": "Project Board Prototype: Ready for QA",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"position\"]}}]"
+    }
+  }
+]

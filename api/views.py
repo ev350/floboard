@@ -46,7 +46,7 @@ class BoardDetail(APIView):
 
     def put(self, request, board_pk):
         board = self.get_object(board_pk)
-        serializer = BoardSerializer(board, data=request.data)
+        serializer = BoardSerializer(board, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
@@ -63,7 +63,7 @@ class ColumnList(generics.ListCreateAPIView):
     serializer_class = ColumnSerializer
 
     def get_queryset(self):
-        queryset = Column.objects.filter(board_id=self.kwargs['board_pk'])
+        queryset = Column.objects.filter(board_id=self.kwargs['board_pk']).order_by('position')
         return queryset
 
     def post(self, request, *args, **kwargs):
@@ -99,7 +99,7 @@ class ColumnDetail(APIView):
 
     def put(self, request, board_pk, position):
         column = self.get_object(board_pk, position)
-        serializer = ColumnSerializer(column, data=request.data)
+        serializer = ColumnSerializer(column, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
@@ -153,7 +153,7 @@ class LabelDetail(APIView):
 
     def put(self, request, board_pk, label_pk):
         label = self.get_object(board_pk, label_pk)
-        serializer = LabelSerializer(label, data=request.data)
+        serializer = LabelSerializer(label, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
@@ -215,7 +215,7 @@ class CardDetail(APIView):
 
     def put(self, request, board_pk, card_pk):
         card = self.get_object(board_pk, card_pk)
-        serializer = CardCreateSerializer(card, data=request.data)
+        serializer = CardCreateSerializer(card, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)
@@ -274,7 +274,7 @@ class CommentDetail(APIView):
 
     def put(self, request, board_pk, card_pk, comment_pk):
         comment = self.get_object(board_pk, card_pk, comment_pk)
-        serializer = CommentSerializer(comment, data=request.data)
+        serializer = CommentSerializer(comment, data=request.data, partial=True)
         if serializer.is_valid():
             serializer.save()
             return Response(serializer.data)

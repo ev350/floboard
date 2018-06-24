@@ -43,8 +43,7 @@ class BoardAPIViewTest(TestCase):
         response = self.client.put(
             '/api/v1/boards/{0}/'.format(self.board.pk),
             {
-                "title": "Test Board Updated",
-                "created_by": self.user.id  # TODO // Figure out whether it's possible not to provide all fields
+                "title": "Test Board Updated"
             }
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
@@ -89,8 +88,7 @@ class ColumnAPIViewTest(TestCase):
             '/api/v1/boards/{board_pk}/columns/{position}/'.format(board_pk=self.board.pk, position=1),
             {
                 "title": "Selected for Development",
-                "position": 1
-            }  # TODO // Figure out whether it's possible not to provide all fields
+            }
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['title'], 'Selected for Development')
@@ -135,7 +133,7 @@ class LabelAPIViewTest(TestCase):
             {
                 "title": "Blue Label",
                 "color": "#0000FF"
-            }  # TODO // Figure out whether it's possible not to provide all fields
+            }
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['title'], 'Blue Label')
@@ -160,6 +158,8 @@ class CardAPIViewSet(TestCase):
         self.user.save()
         self.board = Board(title='Test Board', created_by=self.user)
         self.board.save()
+        self.column = Column(board=self.board, title='Backlog', position=1)
+        self.column.save()
         self.label = Label(board=self.board, title='Red Label', color='#FF0000')
         self.label.save()
         self.label2 = Label(board=self.board, title='Green Label', color='#00FF00')
@@ -172,6 +172,7 @@ class CardAPIViewSet(TestCase):
         response = self.client.post(
             '/api/v1/boards/{board_pk}/cards/'.format(board_pk=self.board.pk),
             {
+                "column": None,
                 "title": "Test Card",
                 "description": "Test Card description.",
                 "created_by": self.user.pk,
@@ -188,10 +189,9 @@ class CardAPIViewSet(TestCase):
             {
                 "title": "Edited Test Card",
                 "description": "Test Card description updated.",
-                "created_by": self.user.pk,
-                "labels": [self.label.pk, self.label2.pk]
-            }  # TODO // Figure out whether it's possible not to provide all fields
+            }
         )
+        print(response.data)
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['title'], 'Edited Test Card')
         self.assertEqual(response.data['description'], 'Test Card description updated.')
@@ -245,9 +245,8 @@ class CommentAPIViewSet(TestCase):
             {
                 "message": "Test Message 2 edited.",
                 "updated_at": "2017-12-17 06:26:53",
-                "created_by": self.user.pk,
                 "updated_by": self.user.pk
-            }  # TODO // Figure out whether it's possible not to provide all fields
+            }
         )
         self.assertEqual(response.status_code, status.HTTP_200_OK)
         self.assertEqual(response.data['message'], 'Test Message 2 edited.')

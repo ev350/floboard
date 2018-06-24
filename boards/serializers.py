@@ -55,7 +55,7 @@ class CardListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Card
-        fields = ('id', 'board', 'title', 'description', 'created_by', 'assignees', 'labels', 'comment_set')
+        fields = ('id', 'board', 'column', 'title', 'description', 'created_by', 'assignees', 'labels', 'comment_set')
         read_only_fields = ('id', 'board')
 
 
@@ -77,7 +77,7 @@ class CardCreateSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Card
-        fields = ('id', 'board', 'title', 'description', 'created_by', 'assignees', 'labels', 'comment_set')
+        fields = ('id', 'board', 'column', 'title', 'description', 'created_by', 'assignees', 'labels', 'comment_set')
         read_only_fields = ('id', 'board')
 
 
